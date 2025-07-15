@@ -31,7 +31,7 @@ public class BeachWeatherController {
     public String callBeachApi() {
         StringBuffer result = new StringBuffer();
         try {
-            String urlStr = "https://apis.data.go.kr/1360000/BeachInfoservice/getUltraSrtFcstBeach?serviceKey=RVuBcJu7WLxnDOcBSYfrJUHKDqnt0uoFElNmUIZSgDcHC3hfB2fw5I83g2JtLaDinp7EDGcU4A9e%2FjdcHUXjsg%3D%3D&numOfRows=10&pageNo=1&dataType=JSON&base_date=20250712&base_time=0800&beach_num=1"; // 네 API URL
+            String urlStr = "https://apis.data.go.kr/1360000/BeachInfoservice/getUltraSrtFcstBeach?serviceKey=RVuBcJu7WLxnDOcBSYfrJUHKDqnt0uoFElNmUIZSgDcHC3hfB2fw5I83g2JtLaDinp7EDGcU4A9e%2FjdcHUXjsg%3D%3D&numOfRows=10&pageNo=1&dataType=JSON&base_date=20250715&base_time=0800&beach_num=1"; // 네 API URL
             URL url = new URL(urlStr);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
